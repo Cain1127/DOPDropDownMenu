@@ -10,21 +10,16 @@
 Pod::Spec.new do |s|
   s.name             = "DOPDropDownMenu"
   s.version          = "0.1.0"
-  s.summary          = "A short description of DOPDropDownMenu."
+  s.summary          = "DOPDropDownMenu"
   s.description      = <<-DESC
-                       An optional longer description of DOPDropDownMenu
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       像美团一样的菜单选择频道栏，可以多栏，可以多选，也可以单选。
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/DOPDropDownMenu"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/Cain1127/DOPDropDownMenu"
   s.license          = 'MIT'
   s.author           = { "ysmeng" => "49427823@163.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/DOPDropDownMenu.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/Cain1127/DOPDropDownMenu.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '7.1'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
@@ -32,7 +27,4 @@ Pod::Spec.new do |s|
     'DOPDropDownMenu' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
