@@ -68,10 +68,6 @@ it, simply add the following line to your Podfile:
 - (void)menu:(DOPDropDownMenu *)menu didSelectRowAtIndexPath:(DOPIndexPath *)indexPath;
 @end
 
-```ruby
-pod "DOPDropDownMenu"
-```
-
 ## Author
 
 Weizhou,  shiwoow@gmail.com
