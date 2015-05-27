@@ -11,11 +11,12 @@
 
 @interface YSMViewController () <DOPDropDownMenuDataSource,DOPDropDownMenuDelegate>
 
+@property (nonatomic,strong) DOPDropDownMenu *menu;
 @property (nonatomic, strong) NSArray *classifys;
 @property (nonatomic, strong) NSArray *cates;
 @property (nonatomic, strong) NSArray *movices;
 @property (nonatomic, strong) NSArray *hostels;
-@property (nonatomic, strong) NSArray *areas;
+@property (nonatomic, strong) NSMutableArray *areas;
 
 @property (nonatomic, strong) NSArray *sorts;
 
@@ -35,15 +36,15 @@
     self.cates = @[@"自助餐",@"快餐",@"火锅",@"日韩料理",@"西餐",@"烧烤小吃"];
     self.movices = @[@"内地剧",@"港台剧",@"英美剧"];
     self.hostels = @[@"经济酒店",@"商务酒店",@"连锁酒店",@"度假酒店",@"公寓酒店"];
-    self.areas = @[@"全城",@"芙蓉区",@"雨花区",@"天心区",@"开福区",@"岳麓区"];
+    self.areas = [NSMutableArray arrayWithObjects:@"全城",@"芙蓉区",@"雨花区",@"天心区",@"开福区",@"岳麓区", nil];
     self.sorts = @[@"默认排序",@"离我最近",@"好评优先",@"人气优先",@"最新发布"];
     
     // 添加下拉菜单
-    DOPDropDownMenu *menu = [[DOPDropDownMenu alloc] initWithOrigin:CGPointMake(0, 64) andHeight:44];
+    self.menu = [[DOPDropDownMenu alloc] initWithOrigin:CGPointMake(0, 64) andHeight:44];
     
-    menu.delegate = self;
-    menu.dataSource = self;
-    [self.view addSubview:menu];
+    self.menu.delegate = self;
+    self.menu.dataSource = self;
+    [self.view addSubview:self.menu];
     
 }
 
@@ -138,6 +139,26 @@
     }
     
     return nil;
+    
+}
+
+- (IBAction)addAddressItemsAction:(UIButton *)sender
+{
+    
+    static int addIndex = 1;
+    [self.areas addObject:[NSString stringWithFormat:@"add_%d",addIndex]];
+    addIndex++;
+    [self.menu reloadData];
+    
+}
+
+- (IBAction)addSelectedItemsAction:(UIBarButtonItem *)sender
+{
+    
+    static int addIndex = 1;
+    [self.areas addObject:[NSString stringWithFormat:@"add_%d",addIndex]];
+    addIndex++;
+    [self.menu reloadData];
     
 }
 
