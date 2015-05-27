@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DOPDropDownMenu"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "DOPDropDownMenu"
   s.description      = <<-DESC
                        像美团一样的菜单选择频道栏，可以多栏，可以多选，也可以单选。
