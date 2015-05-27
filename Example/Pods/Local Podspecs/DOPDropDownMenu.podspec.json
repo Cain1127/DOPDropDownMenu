@@ -1,6 +1,6 @@
 {
   "name": "DOPDropDownMenu",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "DOPDropDownMenu",
   "description": "                       像美团一样的菜单选择频道栏，可以多栏，可以多选，也可以单选。\n",
   "homepage": "https://github.com/Cain1127/DOPDropDownMenu",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/Cain1127/DOPDropDownMenu.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "7.1"

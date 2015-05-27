@@ -1,5 +1,5 @@
 PODS:
-  - DOPDropDownMenu (0.1.0)
+  - DOPDropDownMenu (0.1.1)
   - Expecta (0.4.2)
   - Expecta+Snapshots (1.3.2):
     - Expecta (~> 0.3)
@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DOPDropDownMenu: 3d55227854c63b62c7f8d4c206a6a65de4729a5d
+  DOPDropDownMenu: 92edceaee75cd8703d9891b4844d48c0d0a2ae54
   Expecta: 78b4e8b0c8291fa4524d7f74016b6065c2e391ec
   Expecta+Snapshots: 40c5ec43b43da3bae957f14fed5dc9177d08ec8b
   FBSnapshotTestCase: 9d5fe43b29ae3a0ed8fc829477971b281038f748
